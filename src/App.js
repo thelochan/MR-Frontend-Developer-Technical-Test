@@ -71,18 +71,24 @@ function App() {
         {isCartOpen && (
           <div className="cart">
             <h3>Cart</h3>
-            <ul>
-              {cart.map((item, index) => (
-                <li key={index}>
-                  <img src={item.image} alt={item.name} className="cart-item-image" />
-                  {item.name} ({item.size}) - ${item.price} x {item.quantity}
-                </li>
-              ))}
-            </ul>
-            <p>Total: ${cart.reduce((total, item) => total + item.price * item.quantity, 0)}</p>
-            <button className="clear-cart-btn" onClick={clearCart}>
-              Clear Cart
-            </button>
+            {cart.length === 0 ? (
+              <p>Your cart is empty.</p>
+            ) : (
+              <>
+                <ul>
+                  {cart.map((item, index) => (
+                    <li key={index}>
+                      <img src={item.image} alt={item.name} className="cart-item-image" />
+                      {item.name} ({item.size}) - ${item.price} x {item.quantity}
+                    </li>
+                  ))}
+                </ul>
+                <p>Total: ${cart.reduce((total, item) => total + item.price * item.quantity, 0)}</p>
+                <button className="clear-cart-btn" onClick={clearCart}>
+                  Clear Cart
+                </button>
+              </>
+            )}
           </div>
         )}
       </header>
@@ -97,7 +103,7 @@ function App() {
             <p className="price">${product.price}</p>
             <p className="description">{product.description}</p>
             <div className="size-selector">
-              <span>SIZE*</span>
+              <span>SIZE<span className="required-star">*</span></span>
               <div>
                 <button
                   className={`size-btn ${selectedSize === 'S' ? 'active' : ''}`}
