@@ -58,6 +58,10 @@ function App() {
     return cart.reduce((total, item) => total + item.quantity, 0);
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   return (
     <div className="container">
       <header className="header">
@@ -76,6 +80,9 @@ function App() {
               ))}
             </ul>
             <p>Total: ${cart.reduce((total, item) => total + item.price * item.quantity, 0)}</p>
+            <button className="clear-cart-btn" onClick={clearCart}>
+              Clear Cart
+            </button>
           </div>
         )}
       </header>
