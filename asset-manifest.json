@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MR-Frontend-Developer-Technical-Test/static/css/main.6f3b6db1.css",
+    "main.js": "/MR-Frontend-Developer-Technical-Test/static/js/main.2d0dd5e9.js",
+    "static/js/453.47ba9f5b.chunk.js": "/MR-Frontend-Developer-Technical-Test/static/js/453.47ba9f5b.chunk.js",
+    "static/media/classic-tee.jpg": "/MR-Frontend-Developer-Technical-Test/static/media/classic-tee.efc04b0f6dd7569f3068.jpg",
+    "index.html": "/MR-Frontend-Developer-Technical-Test/index.html",
+    "main.6f3b6db1.css.map": "/MR-Frontend-Developer-Technical-Test/static/css/main.6f3b6db1.css.map",
+    "main.2d0dd5e9.js.map": "/MR-Frontend-Developer-Technical-Test/static/js/main.2d0dd5e9.js.map",
+    "453.47ba9f5b.chunk.js.map": "/MR-Frontend-Developer-Technical-Test/static/js/453.47ba9f5b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f3b6db1.css",
+    "static/js/main.2d0dd5e9.js"
+  ]
+}
